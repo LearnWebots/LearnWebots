@@ -1,0 +1,56 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/softbank/nao/protos/VisualArmature.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.32412825152425606 0.5402422968942701 0.7765817002802938 1.3155963491695608
+  position -2.3512046261353867 -4.089865605158364 4.450854562890551
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 3 3
+}
+Robot {
+  children [
+    Display {
+      width 640
+      height 480
+    }
+    Camera {
+      translation -1 0 0.5
+      fieldOfView 1
+      width 640
+      height 480
+    }
+  ]
+  controller "Ibot"
+}
+VisualArmature {
+  translation 1 0.25 0.25
+  rotation 0 0 1 3.1415926
+  dimension 0.01 0.5 0.5
+}
+VisualArmature {
+  translation 1 -0.25 0.25
+  rotation 0 0 1 3.1415926
+  dimension 0.01 0.5 0.5
+  textureUrl [
+    "../images/aruco_0.png"
+  ]
+}
+VisualArmature {
+  translation 1 0 0.75
+  rotation 0 0 1 3.14159
+  dimension 0.01 0.5 0.5
+  textureUrl [
+    "../images/opencv_logo.png"
+  ]
+}
