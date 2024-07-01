@@ -5,7 +5,7 @@ sceneTreePerspectives: 000000ff00000001000000030000001c000000c0000000fa010000000
 maximizedDockId: -1
 centralWidgetVisible: 1
 orthographicViewHeight: 1
-textFiles: 0 "controllers/Ibot/Ibot.cpp" "controllers/Ibot/Makefile"
+textFiles: 0 "../../../LearnWebots/0-webots_and_opencv_env/Ibot/controllers/Ibot/Ibot.cpp" "../../../LearnWebots/0-webots_and_opencv_env/Ibot/controllers/Ibot/Makefile"
 globalOptionalRendering: CameraFrustums
 consoles: Console:All:All
 renderingDevicePerspectives: robot:camera;1;0.4625;0;0
